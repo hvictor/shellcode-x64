@@ -4,7 +4,7 @@
 # Architecture:     x64
 # OS:               Microsoft Windows
 # Author:           hvictor (Victor Huerlimann)
-# Shellcode Size:   
+# Shellcode Size:   564 bytes
 #
 # Special thanks to wetw0rk (Milton Valencia), from whom I drew inspiration for the indicated parts of the code: https://github.com/wetw0rk/Sickle
 #
