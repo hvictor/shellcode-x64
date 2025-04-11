@@ -170,7 +170,7 @@ call_WSASocketA:
     xor r9, r9                          # Parameter lpProtocolInfo = 0
     mov [rsp + 32], r9                  # Parameter dwFlags = 0
     mov [rsp + 40], r9                  # Parameter g = 0
-    call [rsp + 528]                      # Call WSASocketA
+    call [rsp + 528]                    # Call WSASocketA
 
 
 call_connect:
