@@ -5,6 +5,7 @@
 # OS:               Microsoft Windows
 # Author:           hvictor (Victor Huerlimann)
 # Shellcode Size:   564 bytes
+# Repository:       https://github.com/hvictor/shellcode-x64
 #
 # Special thanks to wetw0rk (Milton Valencia), from whom I drew inspiration for the indicated parts of the code: https://github.com/wetw0rk/Sickle
 #
