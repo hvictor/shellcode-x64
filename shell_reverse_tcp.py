@@ -235,7 +235,7 @@ call_TerminateProcess:
     dec rcx                             # Parameter hProcess = -1 = this process
     xor rdx, rdx                        # Parameter uExitCode = 0 (graceful termination)
     int3
-    call [rsp + 608]
+    call [rsp + 608]                    # Call TerminateProcess
 '''
 )
 
